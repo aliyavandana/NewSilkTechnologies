@@ -36,10 +36,10 @@ const styles = StyleSheet.create({
     logoText: {
         
         fontSize: 20,
-        color: 'rgba(255, 255, 255, 0.7)'
+        color: 'rgba(0, 0, 0, 0.7)'
     },
     silk: {
-        color: 'rgba(255, 255, 255, 0.7)',
+        color: 'rgba(0, 0, 0, 0.7)',
         fontWeight:'500',
         fontSize:20,
     }

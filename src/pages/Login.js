@@ -9,7 +9,7 @@ import { Actions } from 'react-native-router-flux';
 export default class Login extends Component {
 
 	Signup() {
-		Actions.Signup()
+		Actions.signup()
 	}
 	render() {
 		console.log("I am in Login Component");
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
 		flex: 1,
 		justifyContent: 'center',
 		alignItems: 'center',
-		backgroundColor: '#00838f',
+		backgroundColor: '#ffffff',
 	},
 	signupTextcont: {
 		flexGrow: 1,
@@ -40,11 +40,11 @@ const styles = StyleSheet.create({
 		flexDirection: 'row'
 	},
 	signupText: {
-		color: 'rgba(255,255,255,0.7)',
+		color: 'rgba(0, 0, 0, 0.7)',
 		fontSize: 16
 	},
 	signupButton: {
-		color: 'rgba(255,255,255,0.7)',
+		color: 'rgba(0, 98, 159, 0.7)',
 		fontSize: 16,
 		fontWeight: '500'
 	}

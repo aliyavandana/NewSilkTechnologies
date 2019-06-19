@@ -1,122 +1,80 @@
 import React, { Component } from 'react';
-import { Button, View, StyleSheet, Image, Text } from 'react-native';
+import {
+ StyleSheet,
+ Text,
+ View,
+ TextInput,
+ Button,
+ TouchableHighlight,
+ Image,
+ Alert
+} from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { Actions } from 'react-native-router-flux';
 
+export default class LoginView extends Component {
+  render() {
+   return (
+     <View style={styles.container}>
 
-export default class Start extends Component {
+       <TouchableHighlight style={[styles.buttonContainer, styles.loginButton]} onPress={()=>Actions.login()}>
+         <Text style={styles.loginText}>Login as Client</Text>
+       </TouchableHighlight>
 
-    render() {
-        return (
+       <TouchableHighlight style={[styles.buttonContainer, styles.loginButton]} onPress={()=>Actions.login()}>
+         <Text style={styles.loginText}>Login as Freelancer</Text>
+       </TouchableHighlight>
 
-            <View style={styles.container}>
-                <View style={styles.logontext}>
-                    <Image style={{ width: 180, height: 180, marginLeft: 120, marginRight: 90 }}
-                        source={require('../images/silk-2.png')} />
-
-                    <View style={styles.logonsilk}>
-                        <Text style={styles.silk}>Silk Technologies</Text>
-                    </View>
-                </View>
-                <View style={styles.textnbutton}>
-
-
-                    <View style={styles.buttonContainer}>
-                        <Text style={styles.Text}>Want to find Work? </Text>
-                        <Button style={styles.Button} title="Freelancer_Login"
-                            onPress={() => this.props.navigation.navigate('Details')}
-                        />
-                    </View>
-                </View>
-                <View style={styles.textnbutton}>
-
-                    <View style={styles.buttonContainer}>
-                        <Text style={styles.Text}>Have Work to offer?</Text>
-                        <Button style={styles.Button} title="Client_Login" />
-                    </View>
-                </View>
-
-            </View>
-
-        );
-        //     <TouchableOpacity style={styles.Button} onPress={this.handlePressButton}>
-        //     <Text style={styles.ButtonText}>{this.props.type}</Text>
-
-        // </TouchableOpacity>
-    }
+     </View>
+   );
+ }
 }
 
-
-
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#00838f',
-    },
-
-    logonsilk: {
-        flexGrow: 1,
-        justifyContent: 'center',
-        alignItems: 'flex-end',
-        paddingVertical: 16,
-        flexDirection: 'row',
-        marginTop: 15
-    },
-
-    silk: {
-        color: 'rgba(255, 255, 255, 0.7)',
+ container: {
+   flex: 1,
+   justifyContent: 'center',
+   alignItems: 'center',
+   backgroundColor: '#DCDCDC',
+ },
+ inputContainer: {
+     borderBottomColor: '#F5FCFF',
+     backgroundColor: '#FFFFFF',
+     borderRadius:30,
+     borderBottomWidth: 1,
+     width:250,
+     height:45,
+     marginBottom:20,
+     flexDirection: 'row',
+     alignItems:'center'
+ },
+ inputs:{
+     height:45,
+     marginLeft:16,
+     borderBottomColor: '#FFFFFF',
+     flex:1,
+ },
+ inputIcon:{
+   width:30,
+   height:30,
+   marginLeft:15,
+   justifyContent: 'center'
+ },
+ buttonContainer: {
+   height:45,
+   flexDirection: 'row',
+   justifyContent: 'center',
+   alignItems: 'center',
+   marginBottom:20,
+   width:250,
+   borderRadius:30,
+ },
+ loginButton: {
+    backgroundColor: '#005662',
+ },
+ loginText: {
+   color: 'white',
+   fontSize: 16,
         fontWeight: '500',
-        fontSize: 30,
-    },
-    logontext: {
-        flexDirection: 'column',
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-        //   margin: 'auto',
-    },
-
-    buttonContainer: {
-        flex: 1,
-        fontSize: 16,
-        // flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#00838f',
-        marginTop: 0,
-        width: "90%"
-
-
-    },
-
-    Button: {
-        flex: 1,
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginBottom: 0,
-        width: "200%",
-
-
-
-
-    },
-
-
-
-    textnbutton: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontSize: 25,
-        marginTop: 5
-
-    },
-
-    Text: {
-        fontSize: 25,
-        marginTop: -5,
-
-        color: 'rgba(255, 255, 255, 0.7)',
-    }
-
-
+ }
 });

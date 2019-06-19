@@ -1,0 +1,383 @@
+<style>
+.tabordion {
+color: #c2c475;
+display: block;
+font-family: arial, sans-serif;
+margin: auto;
+position: relative;
+width: 100%;
+}
+.tabordion input[name="sections"] {
+left: -9999px;
+position: absolute;
+}
+.tabordion section {
+display: block;
+}
+.tabordion h2 {
+padding-top:25px;
+}
+span.a {
+display: inline;
+/* the default for span */
+width: 300px;
+height: 500px;
+padding: 5px;
+}
+span.b {
+display: inline-block;
+width: 300px;
+height: 500px;
+padding: 5px;
+color: black
+}
+#section1 {
+-top: 1px solid #c2c475;
+}
+.tabordion section label {
+background: #006e3d;
+border: 1px solid #c2c475;
+cursor: pointer;
+display: block;
+font-size: 0.8em;
+font-weight: 600;
+padding: 22px 23px 22px 23px;
+position: relative;
+width: 180px;
+z-index: 100;
+}
+.label-text {
+position: absolute;
+margin: 10px;
+}
+.tabordion section article {
+display: none;
+left: 230px;
+min-width: 300px;
+padding: 0 0 0 21px;
+position: absolute;
+top: 0;
+}
+.tabordion input[name="sections"]:checked + label>.svg-icon1 {
+content: url("https://www.worldwalks.com/wp-content/uploads/icons/wa.svg");
+}
+.svg-icon1 {
+content: url("https://www.worldwalks.com/wp-content/uploads/icons/wi.svg");
+}
+p {
+color: rgba(0, 0, 0, .6);
+font-family: freight-big-pro;
+font-weight: 500;
+font-size: 18px
+}
+.tabordion input[name="sections"]:checked + label>.svg-icon2 {
+content: url("https://www.worldwalks.com/wp-content/uploads/icons/pa.svg");
+}
+.svg-icon2 {
+content: url("https://www.worldwalks.com/wp-content/uploads/icons/pia.svg");
+}
+.tabordion input[name="sections"]:checked + label>.svg-icon3 {
+content: url("https://www.worldwalks.com/wp-content/uploads/icons/what.svg");
+}
+.svg-icon3 {
+content: url("https://www.worldwalks.com/wp-content/uploads/icons/whati.svg");
+}
+.tabordion input[name="sections"]:checked + label>.svg-icon4 {
+content: url("https://www.worldwalks.com/wp-content/uploads/icons/ita.svg");
+}
+.svg-icon4 {
+content: url("https://www.worldwalks.com/wp-content/uploads/icons/iti.svg");
+}
+.tabordion section article:after {
+bottom: 0;
+content: "";
+display: block;
+left: -229px;
+position: absolute;
+top: 0;
+width: 220px;
+z-index: 1;
+}
+.tabordion input[name="sections"]:checked ~ article {
+display: block;
+}
+@media (max-width: 533px) {
+
+h1 {
+width: 100%;
+}
+
+.tabordion {
+width: 100%;
+
+}
+
+.tabordion section label {
+font-size: 1em;
+width: 160px;
+}
+
+.tabordion section article {
+left: 200px;
+min-width: 270px;
+}
+
+.tabordion section article:after {
+background-color: #ccc;
+bottom: 0;
+content: "";
+display: block;
+left: -199px;
+position: absolute;
+top: 150px;
+width: 200px;
+}
+
+}
+
+
+@media (max-width: 768px) {
+h1 {
+width: 96%;
+}
+
+.tabordion {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.tabordion section {
+flex-grow: 1;
+width: 25%;
+}
+
+.tabordion section label {
+
+font-size: 0.8em;
+font-weight: 600;
+/* padding: 23px 23px 23px 23px;*/
+position: relative;
+width: auto;
+height: 50px;
+
+}
+
+.active {
+text-align: center;
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: block;
+}
+
+.label-text {
+text-align: center;
+position: absolute;
+margin-left: 0px;
+top: 70%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+
+}
+
+
+.tabordion section article {
+padding: 0px;
+position: absolute;
+top: 250;
+width: 100%;
+left: 0 !important;
+}
+
+}
+
+
+@media (min-width: 1366px) {
+h1 {
+width: 70%;
+}
+
+.tabordion {
+width: 70%;
+}
+.tabordion input[name="sections"]:checked + label {
+background: #fafafa;
+color: #006e3d;
+:1px solid #c2c475;
+-left: 2px solid #c2c475;
+padding-right: 25px;
+-bottom: 4px solid #c2c475;
+}
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:website="http://ogp.me/ns/website" lang="en-US" itemscope itemtype="http://schema.org/WebPage" >
+<head>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+</head>
+</style>
+<div class="tabordion">
+<section id="section1">
+<input type="radio" name="sections" id="option1" checked>
+<label for="option1"><img class="svg-icon1 active" alt=""><span class="label-text">The Walk</span></label>
+<article>
+<h2>The Walk</h2>
+<p align="justify">
+<meta name="viewport" content="width=device-width, initial-scale=1" /> An eight night (or fewer, if preferred) circular walking Holiday of the Cotswolds with shorter walking days.
+<br /><br />
+Leave any day you like subject to accommodation availability. ‘The Best of the Cotswolds’ walk includes all the finest villages of the northern Cotswolds in manageable stages for people who prefer shorter walking days. You can do the full 8 night itinerary or just a part of it, with the price adjusted accordingly. This tour is a good option for those after a less strenuous itinerary or who would like more time to explore some of the villages and to take their time on the walks.
+<br /><br />
+This journey takes you through some of the nicest countryside and villages in The Cotswolds. The route will take you through charming and pretty villages, complete with houses made from the honey coloured limestone of the local area. Away from the villages enjoy the carefully researched walking routes that guide you through classic English countryside. With green rolling hills of pasture and farmland, the area is full of history, some of which is evident to this day. Keep an eye out for sheep (and lambs in the spring/early summer) and enjoy your journey on to the next village as you admire the scenery along the way.
+</p>
+</section>
+<section id="section2">
+<input type="radio" name="sections" id="option2">
+<label for="option2"><img class="svg-icon2 active" alt=""><span class="label-text">The Price</span></label>
+<article>
+<h2>Pricing Information</h2>
+<p align="justify">From £690 in Bed and Breakfast accommodation with private bathrooms.</p>
+
+<p align="justify">From £750 per person in B&Bs and village inns.</p>
+
+<p align="justify">From £850 per person in village hotels and best quality village inns in village without hotels</p>
+
+<p align="justify">Upgraded accommodation is available along the route, please ask for a quote.
+</p>
+</article>
+</section>
+<section id="section3">
+<input type="radio" name="sections" id="option3">
+<label for="option3"><img class="svg-icon3 active" alt=""> <span class="label-text">What's Included</span></label>
+<article>
+<h2>What's Included</h2>
+</p>
+<ul>
+<li>
+<p>8 nights B&B accommodation </p>
+</li>
+<li>
+<p>Luggage transfers each walking day</p>
+</li>
+<li>
+<p>Route notes & maps</p>
+</li>
+<li>
+<p>Local back-up</p>
+</li>
+</ul>
+
+</p>
+</section>
+<section id="section4">
+<input type="radio" name="sections" id="option4">
+<label for="option4"><img class="svg-icon4 active" alt=""><span class="label-text">The Itinerary</span></label>
+<article>
+<div style="height:705px;width:800px;:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+<h2>The Itinerary</h2>
+<p align="justify">Day 1: Arrive Moreton-in-Marsh for overnight.</p>
+<p align="justify">Day 2: Moreton in Marsh to Stow-on-the-Wold (7 miles/11 km). Cross the high wolds to Stow-on-the-Wold, complete with village stocks and picturesque square, via the fantastic Mogul manor house at Sezincote and a number of pretty hamlets. Overnight Stow-on-the-Wold.</p>
+<p align="justify">Day 3: Stow-on-the-Wold to Bourton-on-the-Water (4.5 miles – 7.2 km) Today’s route from Stow-on-the-Wold is a leisurely downhill walk across meadows to picturesque Lower Slaughter with its working mill and on to Bourton-on-the-Water, with its many attractions. Overnight Bourton-on-the-Water.</p>
+<p align="justify">Day 4: Bourton-on-the-Water to Guiting Power (7 miles/11 km) The route follows the River Windrush to the village of Naunton with its ancient dovecote and on to lovely Guiting Power, where the church has a fine Norman arch. Overnight Guiting Power.
+</p>
+<p align="justify">Day 5: Guiting Power to Winchcombe (6 miles/9.5 kms) Walk through woods and fields before the dramatic descent to the ancient Saxon capital of Winchcombe, close to Sudeley Castle, last resting place of Katherine Parr, Henry VIII’s sixth wife. Overnight in Winchcombe, with its fascinating church and local museums.</p>
+<p align="justify">Day 6: Winchcombe to Stanton (7 miles/11 km) or Broadway (10.5 miles/17 kms or 8.5 miles/13.9 km) Follow the pilgrims’ route to Hailes Abbey, then over the hills to Jacobean Stanway House, with its magnificent gatehouse and medieval tithe barn and on to idyllic Stanton. Stay in the small village of Stanton or the coaching village of Broadway, where an array of fine houses and inns flank the ‘broad way’. Also possible to overnight in Buckland Manor, 2 miles before Broadway.</p>
+<p align="justify">Day 7: Stanton or Broadway to Chipping Campden (8 miles/13 km or 4.5 miles/7 km) Walk up to Broadway Tower, the 18th century folly from where there are fine views across the vale before descending to Chipping Campden, the loveliest of all Cotswold villages, with its covered market place, beautiful ‘wool’ church, almshouses and silversmith. Overnight in Chipping Campden.</p>
+<p align="justify">Day 8: Chipping Campden to Moreton in Marsh (7 miles/11 km) Pass through the charming villages of Broad Campden and Blockley and descend to Batsford, where you may visit the arboretum and falconry centre. Finally, a pleasant stroll across meadows to Moreton in Marsh. Overnight Moreton in Marsh.</p>
+<p align="justify">Day 9: Departure after breakfast.</p>
+</div>
+</article>
+</section>
+<section id="section5">
+<input type="radio" name="sections" id="option5">
+<label for="option5"><img class="svg-icon4 active" alt=""><span class="label-text">Grading</span></label>
+<article>
+<h2>How Much Walking?</h2>
+<p align="justify">Distance: 47 miles (75 kms). Duration: 8 nights, 7 days walking. Maximum/minimum daily distances: 8.7 miles (13.9 km) / 4.5 miles (7.2 km).</p>
+<p align="justify">This tour is of easy/moderate difficulty. Average daily walking distance is 7 miles and there are no prolonged or large altitude gains. Terrain is not generally too rugged. The walking is Mainly on dirt paths through fields, some stretches of tarmac, and occasional rocky paths.</p>
+</p>
+<ul>
+<li>
+<p>Longest day 8.7 miles </p>
+</li>
+<li>
+<p>Shortest day 4.5 miles</p>
+</li>
+<li>
+<p>Average daily mileage 7 miles</p>
+</li>
+<li>
+<p>Most cumulative elevation gain in one day 767 ft.</p>
+</li>
+<li>
+<p>Average daily elevation gain over trip 500 ft </p>
+</li>
+</ul>
+
+</p>
+</p>
+</article>
+</section>
+<section id="section6">
+<input type="radio" name="sections" id="option6">
+<label for="option6"><img class="svg-icon4 active" alt=""><span class="label-text">Route Summary</span></label>
+<article>
+<h2>Route Summary</h2>
+<p align="justify">
+An eight night (or fewer if preferred) circular walking holiday of the North Cotswolds. This tour has seven walking days. The grading and distance is aimed at those wanting a less strenuous tour with enough time to take things at a leisurely pace
+</p>
+<p align="justify">
+Tour Highlights
+</p>
+</p>
+<ul>
+<li>
+<p>Rambling through some of the most picturesque countryside & villages in England</p>
+</li>
+<li>
+<p>Carefully selected accommodation at which to stay</p>
+</li>
+<li>
+<p>Average daily mileage 7 miles</p>
+</li>
+<li>
+<p>Soaking up the history of the area. Ancient abbeys, churches and houses.</p>
+</li>
+<li>
+<p>Appreciate a well earned rest at one of the traditional country pubs in the area </p>
+</li>
+</ul>
+
+</p>
+</span>
+
+</article>
+</section>
+<section id="section7">
+<input type="radio" name="sections" id="option7">
+<label for="option7"><img class="svg-icon4 active" alt=""><span class="label-text">Travel information</span></label>
+<article>
+<div style="height:705px;width:800px;:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+
+<h2>Travel Information</h2>
+<h4>Arriving By Train:</h4>
+<p align="justify">The Cotswolds are at the heart of the British rail network. Direct trains travel from London Paddington to Moreton-in-Marsh frequently.</p>
+
+<h4>Arriving By Plane:</h4>
+<p align="justify">Nearest airport: Birmingham Airport (54.1km).</p>
+<p align="justify">Other nearby airports: Bristol Airport (97.6km), London Heathrow: (164km). From London Heathrow, you can take the Heathrow Express train directly to London Paddington from where you can then take a direct train to Moreton in Marsh</p>
+<p align="justify">We are happy to arrange private transfers to you starting accommodation, please contact us for futher details.</p>
+
+</article>
+</section>
+<section id="section8">
+<input type="radio" name="sections" id="option8">
+<label for="option8"><img class="svg-icon4 active" alt=""><span class="label-text">Accommodation</span></label>
+<article>
+<h2>Accommodation</h2>
+<p align="justify">There are different categories of accommodation available from B&B accommodation to Village Inns to small & luxury hotels. Ensuite rooms are booked where possible, in some B&B's a private bathroom may be necessary.</p>
+<p align="justify">B&B accommodation is generally in guesthouses, often private residences where some of the rooms are used for guests. They are also often smaller in size than Inns or hotels. All of our selected B&Bs will give you a warm welcome with a hearty breakfast for you in the morning. Because these are often private residences, there may not be the facilities you would expect to find in dedicated accommodation establishments. And they do not generally have options for dining in the evening.</p>
+<p align="justify">Village Inns are generally larger, they may cater for only guests or they may also be a pub which also has guest rooms. They generally tend to have more in the way of facilities and have some kind of bar or dining options and are generally larger establishments than B&B’s</p>
+<p align="justify">Hotels are usually the biggest of the establishments that we use and are more dedicated just to accommodation than B&B’s or Inns. There is a wide variety of hotels in The Cotswolds ranging from small hotels, to hotels with restaurants, to award winning luxury hotels.</p>
+</article>
+</section>
